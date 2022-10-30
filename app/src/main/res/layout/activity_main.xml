@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <HorizontalScrollView
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn1"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="general">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn2"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="business">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn3"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="entertainment">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn4"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="health">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn5"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="science">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn6"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="sports">
+
+            </Button>
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/btn7"
+                android:layout_marginEnd="6dp"
+                android:layout_height="wrap_content"
+                android:text="technology">
+
+            </Button>
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/search"
+        android:layout_marginStart="8dp"
+        android:layout_height="?attr/actionBarSize">
+
+    </androidx.appcompat.widget.SearchView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>
